@@ -41,10 +41,15 @@ export default function LifecycleHero() {
       <div className={`lifecycle-figure ${paused ? "is-paused" : ""}`} aria-label="Seven stages of the AIVLAB AI value lifecycle">
         <div className="lifecycle-controls" aria-label="Animation controls">
           <button className={paused ? "" : "is-active"} type="button" aria-label="Pause animation" title="Pause animation" onClick={() => setPaused(true)}>
-            <span className="pause-icon" aria-hidden="true" />
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="6" y="4" width="4" height="16" rx="1" fill="currentColor" />
+              <rect x="14" y="4" width="4" height="16" rx="1" fill="currentColor" />
+            </svg>
           </button>
           <button className={paused ? "is-active" : ""} type="button" aria-label="Play animation from beginning" title="Play animation" onClick={() => { setPaused(false); setRun((value) => value + 1); }}>
-            <span className="play-icon" aria-hidden="true" />
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 4.8v14.4a1 1 0 0 0 1.54.84l10.8-7.2a1 1 0 0 0 0-1.68l-10.8-7.2A1 1 0 0 0 7 4.8Z" fill="currentColor" />
+            </svg>
           </button>
         </div>
         <svg key={run} viewBox="0 0 1000 880" role="img" aria-labelledby="diagram-title diagram-description">
