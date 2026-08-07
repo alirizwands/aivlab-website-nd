@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import PrivacyAnalytics from "./privacy-analytics";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${manrope.variable} antialiased`}
       >
         {children}
+        <PrivacyAnalytics />
       </body>
     </html>
   );
