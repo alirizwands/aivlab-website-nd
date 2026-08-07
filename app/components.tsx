@@ -1,4 +1,6 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export const services = [
   ["01","AI Opportunity, Data & Readiness Assessment","Identify the strongest opportunities, assess your data and organisational readiness, and define the right first step."],
@@ -10,7 +12,9 @@ export const services = [
 ];
 export const stages=["Discover","Design","Build","Validate","Deploy","Govern"];
 
-export function Header(){return <header className="header"><a className="brand" href="/"><b>AIVLAB</b><span>AI Ventures Lab</span></a><nav><a href="/who-we-help">Who We Help</a><a href="/services">Services</a><a href="/technical-lab">Technical Lab</a><a href="/about">About Us</a><a href="/contact">Contact</a></nav><a className="btn small" href="/discovery">Run AI Discovery Agent</a></header>}
+function BrandMark(){return <Image className="brand-mark" src="/aivlab-logo-mark.png" alt="" width={44} height={41} priority/>}
+
+export function Header(){return <header className="header"><Link className="brand" href="/" aria-label="AIVLAB home"><BrandMark/><span className="brand-copy"><b>AI<span>V</span>LAB</b><small>AI Ambition to Impact</small></span></Link><nav><a href="/who-we-help">Who We Help</a><a href="/services">Services</a><a href="/technical-lab">Technical Lab</a><a href="/about">About Us</a><a href="/contact">Contact</a></nav><a className="btn small" href="/discovery">Run AI Discovery Agent</a></header>}
 export function Footer(){return <footer><div className="footer-lead"><b>AIVLAB</b><p>AI consultancy and product lab helping organisations discover, build, validate and govern systems that work in the real world.</p></div><div><span>Explore</span><a href="/who-we-help">Who We Help</a><a href="/services">Services</a><a href="/technical-lab">Technical Lab</a><a href="/about">About Us</a></div><div><span>Connect</span><a href="/contact">Start a conversation</a><a href="/work-with-us">Work With AIVLAB</a><a href="/discovery">AI Discovery Agent</a></div><p className="legal">© 2026 AIVLAB. All rights reserved. · Practical AI. Validated systems. Governance by design.</p></footer>}
 export function Shell({children}:{children:ReactNode}){return <><Header/><main>{children}</main><Footer/></>}
 export function PageHero({label,title,children}:{label:string,title:string,children:ReactNode}){return <section className="page-hero wrap"><p className="eyebrow">{label}</p><h1>{title}</h1><div className="page-lead">{children}</div></section>}

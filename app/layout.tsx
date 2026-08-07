@@ -1,26 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aivlab-site.ale-rizvan.chatgpt.site"),
   title: "AIVLAB | Practical, Validated and Governed AI Systems",
   description: "AIVLAB helps founders, SMEs, research teams, investors and regulated organisations discover, build, validate, govern and deploy practical AI systems.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/aivlab-logo-mark.png",
+    shortcut: "/aivlab-logo-mark.png",
+    apple: "/aivlab-logo-mark.png",
+  },
+  openGraph: {
+    title: "AIVLAB | Practical, Validated and Governed AI Systems",
+    description: "Transform AI ideas into real business value across the complete AI lifecycle.",
+    images: [{ url: "/aivlab-logo-mark.png", width: 352, height: 324, alt: "AIVLAB logo" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "AIVLAB | Practical, Validated and Governed AI Systems",
+    description: "Transform AI ideas into real business value across the complete AI lifecycle.",
+    images: ["/aivlab-logo-mark.png"],
   },
 };
 
@@ -32,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${manrope.variable} antialiased`}
       >
         {children}
       </body>
