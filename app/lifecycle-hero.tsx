@@ -34,7 +34,6 @@ export default function LifecycleHero() {
   return (
     <section className="lifecycle-hero" aria-labelledby="lifecycle-heading">
       <div className="lifecycle-intro wrap">
-        <p className="eyebrow">AI Consultancy &amp; Product Lab</p>
         <h1 id="lifecycle-heading">Transform AI Ideas into Real Business Value</h1>
         <p>AIVLAB helps you generate business value across the complete AI lifecycle. We deliver business automation, AI co-pilots, AI product development, research translation, healthcare AI, independent validation, governance and technical due diligence.</p>
       </div>
