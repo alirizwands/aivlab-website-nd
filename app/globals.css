@@ -18,11 +18,12 @@
 @media(prefers-reduced-motion:reduce){.lifecycle-hero *{animation-duration:.01ms!important;animation-delay:0ms!important}.lifecycle-controls{display:none}}
 
 /* Unified AIVLAB typography and restored header mark */
-body{font-family:var(--font-manrope),Arial,sans-serif;font-size:16px;font-weight:400}
+body{font-family:var(--font-manrope),Arial,sans-serif;font-size:18px;font-weight:400}
 .hero h1,.page-hero h1,.lifecycle-intro h1{font-family:var(--font-manrope),Arial,sans-serif;font-size:clamp(52px,5vw,64px);font-weight:600;line-height:1.08;letter-spacing:-.035em}
 .section h2,.discovery h2,.final h2,.about-strip h2,.editorial h2{font-family:var(--font-manrope),Arial,sans-serif;font-size:clamp(36px,4vw,44px);font-weight:600;line-height:1.14;letter-spacing:-.025em}
 h3,.audiences span,.orbit>div,.lifecycle-stage-name,.lifecycle-center-message text,.lifecycle-center-logo,.lifecycle-footnote{font-family:var(--font-manrope),Arial,sans-serif}
 h3{font-size:21px;font-weight:600}.lifecycle-stage-name{font-size:16px;font-weight:600}.lifecycle-center-message text{font-weight:500}.lifecycle-center-logo{font-weight:600}
-nav,.btn,.arrow{font-size:14px;font-weight:600}.eyebrow,.note,.proofs article>span,.lab-grid article>span{font-size:12px;font-weight:500}
+nav,.btn,.arrow{font-size:14px;font-weight:600}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.16em}.note{font-size:14px;font-weight:500}.proofs article>span,.lab-grid article>span{font-size:12px;font-weight:600}
+.principles p,.rows p,.proofs p{font-size:17px}.stages p{font-size:15px}.lifecycle-intro>p:last-child{font-size:17px}.lifecycle-footnote{font-size:19px}footer a{font-size:16px}.legal{font-size:14px}
 .brand{align-items:center;gap:10px}.brand-mark{width:36px;height:36px;flex:none}.brand-mark>circle:first-child{fill:#fbf7f0;stroke:#b58a4d;stroke-width:1.25}.brand-mark path{fill:none;stroke:#8d6535;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.brand-mark circle:not(:first-child){fill:#a87932}.brand-copy{display:grid;gap:3px}.brand-copy b{font-size:19px;font-weight:600;line-height:1;letter-spacing:.12em}.brand-copy b span{font-size:inherit;text-transform:none;letter-spacing:inherit;color:var(--gold)}.brand-copy small{font-size:8px;font-weight:500;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
 @media(max-width:560px){.hero h1,.page-hero h1,.lifecycle-intro h1{font-size:42px}.brand-mark{width:32px;height:32px}.brand-copy small{display:none}}
