@@ -2,7 +2,7 @@
 
 import { FormEvent, useRef, useState } from "react";
 
-const successMessage = "Thank you—your details have been shared successfully. We will review your experience and contact you if a suitable opportunity arises.";
+const successMessage = "Thank you, your details have been shared successfully. We will review your experience and contact you if a suitable opportunity arises.";
 
 export default function ApplicationForm() {
   const formRef = useRef<HTMLFormElement>(null);
