@@ -21,14 +21,14 @@ export default function About(){return <Shell>
 
     <h2>Why we exist</h2>
     <p>A technically strong AI model can still fail when it solves the wrong problem, relies on unsuitable data, does not fit real workflows, cannot integrate with existing systems, lacks appropriate safeguards or cannot demonstrate reliable performance.</p>
-    <p>AIVLAB exists to close the gap between AI ambition and real-world value. We treat AI as a complete system shaped by people, processes, data, technology and governance—not simply as a model or isolated technical experiment.</p>
+    <p>AIVLAB exists to close the gap between AI ambition and real-world value. We treat AI as a complete system shaped by people, processes, data, technology and governance, not simply as a model or isolated technical experiment.</p>
 
     <h2>How we work</h2>
     <p>Our work is guided by seven practical principles:</p>
     <ul className="about-principles">{principles.map((principle)=><li key={principle}>{principle}</li>)}</ul>
 
     <h2>Expertise shaped around your needs</h2>
-    <p>Every engagement is different. We bring together the appropriate combination of AI, data, engineering, product, domain and governance expertise for the problem—providing focused capability without unnecessary complexity.</p>
+    <p>Every engagement is different. We bring together the appropriate combination of AI, data, engineering, product, domain and governance expertise for the problem, providing focused capability without unnecessary complexity.</p>
     <p>Whether you are exploring an opportunity, translating research, developing an AI product, automating a business process, improving an existing system or seeking independent assurance, AIVLAB helps create a practical path from initial ambition to sustained business value.</p>
     <div className="about-cta"><Arrow href="/contact">Discuss an AI Opportunity</Arrow></div>
   </section>
