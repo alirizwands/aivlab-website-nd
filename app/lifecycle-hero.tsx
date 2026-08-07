@@ -90,6 +90,15 @@ export default function LifecycleHero() {
             <text className="lifecycle-center-tagline" x={cx} y={cy + 30} textAnchor="middle">AI AMBITION TO IMPACT</text>
           </g>
         </svg>
+        <div className="lifecycle-mobile-stages" key={`mobile-${run}`} aria-label="Seven stages of the AIVLAB AI value lifecycle">
+          {lifecycleStages.map((stage, index) => (
+            <article style={{ "--i": index } as React.CSSProperties} key={stage.name}>
+              <span>{stage.name}</span>
+              <p>{stage.keywords.join(" · ")}</p>
+            </article>
+          ))}
+          <div className="lifecycle-mobile-brand"><b>AI<span>V</span>LAB</b><small>AI Ambition to Impact</small></div>
+        </div>
         <div className="lifecycle-foundation" aria-label="Foundations across every stage">
           <span>Evidence</span><i>·</i><span>Governance</span><i>·</i><span>Human Oversight</span><i>·</i><span>Measurable Value</span>
         </div>

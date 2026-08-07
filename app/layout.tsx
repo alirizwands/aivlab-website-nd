@@ -15,8 +15,20 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/aivlab-logo-mark.png",
+    shortcut: "/aivlab-logo-mark.png",
+    apple: "/aivlab-logo-mark.png",
+  },
+  openGraph: {
+    title: "AIVLAB | Practical, Validated and Governed AI Systems",
+    description: "Transform AI ideas into real business value across the complete AI lifecycle.",
+    images: [{ url: "/aivlab-logo-mark.png", width: 352, height: 324, alt: "AIVLAB logo" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "AIVLAB | Practical, Validated and Governed AI Systems",
+    description: "Transform AI ideas into real business value across the complete AI lifecycle.",
+    images: ["/aivlab-logo-mark.png"],
   },
 };
 
