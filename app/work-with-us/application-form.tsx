@@ -30,8 +30,16 @@ export default function ApplicationForm() {
     setSubmitting(true);
     try {
       const response = await fetch("/api/applications", { method: "POST", body: new FormData(form) });
-      const result = await response.json() as { error?: string };
-      if (!response.ok) throw new Error(result.error || "We could not share your details right now.");
+      const contentType = response.headers.get("content-type") || "";
+      const result = contentType.includes("application/json")
+        ? await response.json() as { error?: string }
+        : {};
+      if (!response.ok) {
+        const message = response.status === 413
+          ? "Your CV could not be uploaded because the request was too large. Please choose a file no larger than 5 MB."
+          : result.error || "We could not share your details right now.";
+        throw new Error(message);
+      }
       setSubmitted(true);
     } catch (submissionError) {
       setError(submissionError instanceof Error ? submissionError.message : "We could not share your details right now.");
